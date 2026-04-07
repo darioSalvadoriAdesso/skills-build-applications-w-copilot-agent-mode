@@ -1,0 +1,14 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OctoFit logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="20" fill="url(#g)"/>
+  <g transform="translate(20,20) scale(0.6)">
+    <circle cx="40" cy="28" r="18" fill="#ffffff" opacity="0.12" />
+    <path d="M40 12c-9 0-16 7-16 16s7 16 16 16 16-7 16-16-7-16-16-16zm-18 36c0 6 8 10 18 10s18-4 18-10v6c0 3-6 6-18 6s-18-3-18-6v-6z" fill="#fff" opacity="0.95"/>
+    <text x="30" y="75" font-family="Segoe UI, Roboto, Arial" font-size="28" fill="#fff" font-weight="700">OF</text>
+  </g>
+</svg>

@@ -1,0 +1,135 @@
+/* App.css - OctoFit visual theme */
+:root {
+  --bg-1: #f0f7ff;
+  --bg-2: #eef6ff;
+  --surface: #ffffff;
+  --muted: #6c757d;
+  --text: #0b2545;
+  --accent: #2563eb;
+  --accent-600: #1e40af;
+  --nav-bg: rgba(37,99,235,0.08);
+  --table-head: #e6f0ff;
+  --button-bg: #2563eb;
+  --button-hover: #1e40af;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navigation */
+.navbar-custom {
+  background: linear-gradient(90deg, rgba(37,99,235,0.06), rgba(6,95,70,0.03));
+  border-bottom: 1px solid rgba(11,37,69,0.06);
+  box-shadow: 0 2px 8px rgba(11,37,69,0.03);
+}
+.navbar-custom .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.octo-logo {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+}
+.brand-name {
+  font-weight: 800;
+  font-size: 1.125rem;
+  color: var(--text);
+}
+
+.nav-link,
+.navbar-custom .nav-link {
+  color: rgba(11,37,69,0.85) !important;
+  margin-right: 0.25rem;
+}
+.nav-link:hover,
+.navbar-custom .nav-link:hover {
+  color: var(--accent) !important;
+}
+
+/* Page title */
+.page-title h3 {
+  color: var(--text);
+  margin-bottom: .25rem;
+}
+.page-title p {
+  color: var(--muted);
+}
+
+/* Cards */
+.app-card {
+  margin-bottom: 1.25rem;
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 1.125rem;
+  box-shadow: 0 6px 18px rgba(11,37,69,0.04);
+}
+
+/* Tables */
+.app-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.app-table thead th {
+  background: var(--table-head);
+  color: var(--text);
+  font-weight: 700;
+  padding: .75rem .9rem;
+}
+.app-table tbody td {
+  background: var(--surface);
+  padding: .65rem .9rem;
+  border-bottom: 1px solid rgba(11,37,69,0.04);
+}
+
+/* Buttons */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+  background: var(--button-bg);
+  border-color: var(--button-bg);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--button-hover);
+  border-color: var(--button-hover);
+}
+
+.small-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* Links and headings */
+a {
+  color: var(--accent);
+}
+a:hover { color: var(--accent-600); }
+
+h1, h2, h3, h4 {
+  color: var(--text);
+  margin-top: 0;
+}
+
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .brand-name { font-size: 1rem; }
+  .octo-logo { width: 36px; height: 36px; }
+}
